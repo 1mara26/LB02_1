@@ -425,7 +425,10 @@ fieldset {
   padding: 0;
   margin: 0;
   border: 0;
+  
 }
+
+
 
 legend {
   float: left;
@@ -696,6 +699,17 @@ progress {
   --bs-gutter-y: 0;
   display: flex;
   flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+
+.kontaktpics {
+  padding-top: 50px;
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+ justify-content: flex-end;
   margin-top: calc(-1 * var(--bs-gutter-y));
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
@@ -2016,6 +2030,18 @@ progress {
 .table-group-divider {
   border-top: 2px solid currentcolor;
 }
+
+.nav-link-active {
+ display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: var(--bs-nav-link-font-weight);
+    color:#a6b3ff;
+    text-decoration: none !;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+
+}
+
 
 .caption-top {
   caption-side: top;
